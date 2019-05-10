@@ -1,0 +1,14 @@
+脚本功能：
+批量安装python探针
+
+执行环境：
+Python    2.7
+paramiko  2.4.2
+
+配置说明：
+1、需要配置config中的host字段,注意顺序：
+    key为主机名，value分别是: 主机，ssh端口，用户，密码，探针版本号，启动应用的命令，停止应用的命令.
+	
+2、安装探针：add_agent.py
+3、卸载探针：del_agent.py
+4、以主机名来做为应用名称app_name, 如果要用指定的名称，可改config中key的值。
